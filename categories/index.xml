@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Categories on L1nSn0w&#39;s Blog</title>
+        <link>https://blog.linsnow.cn/categories/</link>
+        <description>Recent content in Categories on L1nSn0w&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>L1nSn0w</copyright>
+        <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.linsnow.cn/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Golang</title>
+        <link>https://blog.linsnow.cn/categories/golang/</link>
+        <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.linsnow.cn/categories/golang/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Kubernetes</title>
+        <link>https://blog.linsnow.cn/categories/kubernetes/</link>
+        <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.linsnow.cn/categories/kubernetes/</guid>
+        <description>&lt;img src="https://blog.linsnow.cn/categories/kubernetes/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Kubernetes" /&gt;</description>
+        </item>
+        <item>
+        <title>Linux</title>
+        <link>https://blog.linsnow.cn/categories/linux/</link>
+        <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.linsnow.cn/categories/linux/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Prometheus</title>
+        <link>https://blog.linsnow.cn/categories/prometheus/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.linsnow.cn/categories/prometheus/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>

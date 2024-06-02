@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Golang on L1nSn0w&#39;s Blog</title>
+        <link>https://blog.linsnow.cn/categories/golang/</link>
+        <description>Recent content in Golang on L1nSn0w&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>L1nSn0w</copyright>
+        <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.linsnow.cn/categories/golang/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>test</title>
+        <link>https://blog.linsnow.cn/p/test/</link>
+        <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.linsnow.cn/p/test/</guid>
+        <description>&lt;h1 id=&#34;windows下go语言的安装&#34;&gt;Windows下Go语言的安装
+&lt;/h1&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
+&lt;/h2&gt;&lt;p&gt;这阵子因为以后工作的原因，所以开始了go语言的学习之旅，工欲善其事必先利其器，首先就得把go语言环境搭建完成&lt;/p&gt;
+&lt;h2 id=&#34;下载go&#34;&gt;下载Go
+&lt;/h2&gt;&lt;p&gt;因为go语言的官网经常打不开，所以我就找了一个 &lt;a class=&#34;link&#34; href=&#34;https://studygolang.com/dl&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;镜像网站&lt;/a&gt;，里面有很多版本的Go语言，选择自己合适的，比如我的是Windows电脑，所以我选中里面的Windows版本的&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.linsnow.cn/p/test/image-20200718111751694.png&#34;
+	width=&#34;1202&#34;
+	height=&#34;747&#34;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;test&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;160&#34;
+		data-flex-basis=&#34;386px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;下载完成是一个安装文件，我们需要进行安装，同时需要注意的就是安装目录，因为事后还需要配置环境变量，下面是安装成功后的图片&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.linsnow.cn/p/test/image-20200718111822269.png&#34;
+	width=&#34;499&#34;
+	height=&#34;389&#34;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20200718111822269&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;128&#34;
+		data-flex-basis=&#34;307px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;配置环境变量&#34;&gt;配置环境变量
+&lt;/h2&gt;&lt;p&gt;根据windows系统在查找可执行程序的原理，可以将Go所在路径定义到环境变量中，让系统帮我们去找运行的执行程序，这样在任何目录下都可以执行go指令，需要配置的环境变量有：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;环境变量&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;GOROOT&lt;/td&gt;
+&lt;td&gt;指定SDK的安装目录&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Path&lt;/td&gt;
+&lt;td&gt;添加SDK的/binmulu&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;GOPATH&lt;/td&gt;
+&lt;td&gt;工作目录&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;首先我们需要打开我们的环境变量，然后添加上GOROOT&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.linsnow.cn/p/test/image-20200718151418230.png&#34;
+	width=&#34;632&#34;
+	height=&#34;666&#34;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20200718151418230&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;94&#34;
+		data-flex-basis=&#34;227px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;然后我们在PATH上添加我们的bin目录&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.linsnow.cn/p/test/image-20200718151503318.png&#34;
+	width=&#34;865&#34;
+	height=&#34;603&#34;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20200718151503318&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;143&#34;
+		data-flex-basis=&#34;344px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;添加完成后，我们输入下面的命令，查看是否配置成功&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;go version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://blog.linsnow.cn/p/test/image-20200718112254366.png&#34;
+	width=&#34;993&#34;
+	height=&#34;519&#34;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20200718112254366&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;191&#34;
+		data-flex-basis=&#34;459px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;下载jetbrain下的golang&#34;&gt;下载Jetbrain下的GoLang
+&lt;/h2&gt;&lt;p&gt;在我们配置好环境，我们就可以使用Jetbrain公司开发的Goland编辑器了，首先进入官网下载&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.jetbrains.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.jetbrains.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;下载完成后，进行启动&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.linsnow.cn/p/test/image-20200718150736688.png&#34;
+	width=&#34;640&#34;
+	height=&#34;400&#34;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20200718150736688&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;160&#34;
+		data-flex-basis=&#34;384px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;启动完成后，我们需要配置一下环境，点击：File -&amp;gt;settings -&amp;gt; GOROOT，配置一下刚刚go安装的目录&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.linsnow.cn/p/test/image-20200718151701767.png&#34;
+	width=&#34;998&#34;
+	height=&#34;712&#34;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20200718151701767&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;140&#34;
+		data-flex-basis=&#34;336px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;以及GOPATH项目所在的目录&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.linsnow.cn/p/test/image-20200718151733127.png&#34;
+	width=&#34;998&#34;
+	height=&#34;712&#34;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20200718151733127&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;140&#34;
+		data-flex-basis=&#34;336px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;hello-world&#34;&gt;hello world
+&lt;/h2&gt;&lt;p&gt;在上面的方法都完成以后，我来来输出hello world吧~&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;package&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;main&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;fmt&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nx&#34;&gt;fmt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Println&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;hello world!&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;代码的说明&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;go文件的后缀是.go&lt;/li&gt;
+&lt;li&gt;package main：表示该hello.go文件所在的包是main，在go中，每个文件都归属与一个包&lt;/li&gt;
+&lt;li&gt;import &amp;ldquo;fmt&amp;rdquo;：表示引入一个包，可以调用里面的函数&lt;/li&gt;
+&lt;li&gt;func main()：表示程序入口，是一个主函数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;输出结果&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.linsnow.cn/p/test/image-20200718151850083.png&#34;
+	width=&#34;506&#34;
+	height=&#34;141&#34;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20200718151850083&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;358&#34;
+		data-flex-basis=&#34;861px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;编译和执行&#34;&gt;编译和执行
+&lt;/h2&gt;&lt;p&gt;我们可以通过使用下面命令进行编译和执行&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 编译 hello.go 后 会生成一个 hello.exe文件&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;go build hello.go
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 运行 hello.ext&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hello.ext
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;需要注意的是，我们也可以使用下面的方式，来直接运行的（使用go run会比较慢，因为内部有个编译的过程）&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;go run hello.go
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;但是在生产环境中，是需要先编译在执行的&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
